@@ -1,0 +1,139 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-size: 14px;
+	background-color: #f1f1f1;
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+/*------------------ Enter Game ------------------*/
+
+h2 {
+	font-weight: 100;
+	margin-bottom: 10px;
+}
+
+.enter-game {
+	width: 605px;
+	padding: 20px;
+	border-radius: 10px;
+	margin: 100px auto 0;
+	border: 1px solid #ccc;
+	background-color: #e0e0e0;
+}
+
+.player-1,
+.player-2 {
+	width: 295px;
+	display: inline-block;
+}
+
+.player-1 {
+	margin-right: 10px;
+	border-right: 1px solid #bbb;
+}
+
+label {
+	width: 70px;
+	display: inline-block;
+}
+
+input {
+	width: 200px;
+	padding: 2px;
+	margin: 5px 0;
+	border: 1px solid #ccc;
+}
+
+.tokens div {
+	width: 63px;
+	height: 63px;
+	opacity: 0.5;
+	cursor: pointer;
+	display: inline-block;
+	margin: 10px 5px 0 0;
+	border: 1px solid #ccc;
+	background: #eee url(sprite.png) no-repeat;
+}
+
+.tokens .selected,
+.tokens div:hover {
+	opacity: 1;
+	background-color: #fff;
+}
+
+.tokens div.disabled {
+	opacity: 0.2;
+	cursor: default;
+	background-color: #888;
+}
+
+.tokens .token1 {
+	background-position: -204px -132px;
+}
+
+.tokens .token2 {
+	background-position: -271px 7px;
+}
+
+.tokens .token3 {
+	background-position: -272px -137px;
+}
+
+.tokens .token4 {
+	background-position: -272px -64px;
+}
+
+.start {
+	cursor: pointer;
+	padding: 5px 15px;
+	border-radius: 5px;
+	margin: 20px auto 0;
+	display: block;
+	width: auto;
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+
+.start:hover {
+	background-color: #e5e5e5;
+}
+
+/*------------------ Game ------------------*/
+
+h1 {
+	margin-top: 50px;
+	text-align: center;
+}
+
+.game {
+	width: 315px;
+	margin: 50px auto 0;
+}
+
+.square {
+	float: left;
+	width: 100px;
+	height: 100px;
+	border: 1px solid #ccc;
+	background: #f1f1f1 url(sprite.png) no-repeat 100px 0;
+}
+
+.square.token1 {
+	background-position: 7px -97px;
+}
+
+.square.token2 {
+	background-position: 9px 7px;
+}
+
+.square.token3 {
+	background-position: -98px -102px;
+}
+
+.square.token4 {
+	background-position: -98px 9px;
+}

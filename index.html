@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jogo da Velha</title>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+	<form class="enter-game" method="POST">
+		<div class="player-1">
+			<h2>Jogador 1</h2>
+			<label>Nome:</label>
+			<input type="text" class="player1-name" required/>
+			<div class="tokens" data-player="1">
+				<div class="token1 selected" data-token="token1"></div>
+				<div class="token2 disabled" data-token="token2"></div>
+				<div class="token3" data-token="token3"></div>
+				<div class="token4" data-token="token4"></div>
+			</div>
+		</div>
+		<div class="player-2">
+			<h2>Jogador 2</h2>
+			<label>Nome:</label>
+			<input type="text" class="player2-name" required/>
+			<div class="tokens" data-player="2">
+				<div class="token1 disabled" data-token="token1"></div>
+				<div class="token2 selected" data-token="token2"></div>
+				<div class="token3" data-token="token3"></div>
+				<div class="token4" data-token="token4"></div>
+			</div>
+		</div>
+		<input type="submit" class="start" value="Começar"/>
+	</form>
+	<script src="jquery.js" type="text/javascript" ></script>
+	<script src="script.js" type="text/javascript" ></script>
+</body>
+</html>
